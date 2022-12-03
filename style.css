@@ -1,0 +1,47 @@
+body{
+    font-weight: 600;
+}
+
+#gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 75vw;
+    margin: 20px auto;
+}
+
+figure{
+    cursor: move;
+    margin: 10px;
+    padding: 0;
+    position: relative;
+}
+
+figure img{
+    width: 100%;
+    height: 200px;
+}
+
+img{
+    filter: hue-rotate(10);
+    padding: 0;
+    border: 3px solid #fff;
+    box-shadow: 0px 0px 3px #ccc;
+    z-index: -1;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+figcaption{
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    text-align: center;
+    color: #5e423f;
+    z-index: 1;
+    padding: 9px 0px 11px 0px;
+    text-transform: uppercase;
+    font-size: 1vw;
+    position: absolute;
+    bottom: 6px;
+}
